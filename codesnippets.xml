@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<!--Trust me. I know what I'm doing.-->
+<!--Khôi Nguyên Óc Cặc-->
 <snippets>
     <item name="Công thức Euler" type="snippet" ID="1">
         <snippet>f64 EulerTotient(f64 n)&#x0D;&#x0A;{&#x0D;&#x0A;    f64 res = n;&#x0D;&#x0A;    for (f64 p = 2; p * p &lt;= n; p++)&#x0D;&#x0A;        if (n % p == 0)&#x0D;&#x0A;&#x09;&#x09;{&#x0D;&#x0A;            while (n % p == 0)&#x0D;&#x0A;                n /= p;&#x0D;&#x0A;            res -= res / p;&#x0D;&#x0A;        }&#x0D;&#x0A;    if (n &gt; 1)&#x0D;&#x0A;        res -= res / n;&#x0D;&#x0A;    return res;&#x0D;&#x0A;}</snippet>
